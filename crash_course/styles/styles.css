@@ -141,3 +141,117 @@ footer{
     padding: 10px; 
     text-align: center;
 }
+
+/* pseudo classes */
+nav li a:hover{
+    text-decoration: underline;
+}
+.images li:hover{
+    /* doing this to nudge it up a few  */
+    position: relative;
+    top: -4px;
+}
+form input:focus{
+    /* when in focus style it some  */
+    border: 4px dashed #4b4b4b;
+    outline: none;
+}
+form input:valid{
+    /* once becomes valid style it green 
+    and make the border solid  */
+    border: 4px solid #71d300;
+}
+
+/* psuedo elements */
+article p::first-line{
+    /* style the first line bold and a bit bigger */
+    font-weight: bold;
+    font-size:1.2em;
+}
+section.join p::first-letter{
+    font-size: 1.5em;
+}
+p::selection{
+    /* change the hightlight and text color when selected */
+    background-color: #f63232;
+    color: white;
+}
+p::after{
+    /* let the use know more is coming by inserting ...  */
+    content: '...'
+}
+
+/* ------ Responsive styles ---- */
+/* to help with different browser sizes */
+
+/* for max width of 1400px or less  */
+@media screen and (max-width: 1400px) {
+    .banner .welcome h2{
+        /* shrink font sizes */
+        font-size: 60px;
+    }
+    nav li{
+        /* shrink font sizes */
+        font-size: 18px;
+    }
+}
+
+/* for max width of 1400px or less  */
+@media screen and (max-width: 960px) {
+    .banner .welcome h2{
+        /* shrink font sizes */
+        font-size: 40px;
+    }
+    
+}
+
+/* for max width of 1400px or less  */
+@media screen and (max-width: 700px) {
+    
+    .banner .welcome{
+        /* make the welcome now sit below banner 
+        and restyle some*/
+        position: relative;
+        text-align: center;
+        padding: 10px;
+    }
+    .banner .welcome br{
+        display: none;
+    }
+    .banner .welcome h2{
+        /* shrink font sizes */
+        font-size: 25px;
+    }
+    .banner .welcome span{
+        /* shrink font sizes so all words are same now */
+        font-size: 1em;
+    }
+    .images li{
+        /* make the width take up entire page 
+        and now images sit on top of each other */
+        width: 100%;
+        margin: 20px auto;
+        display: block;
+    }
+}
+
+
+/* for max width of 1400px or less  */
+@media screen and (max-width: 560px){
+    nav li{
+        /* make fonts bigger for mobile  */
+        font-size: 20px;
+        /* also make the links now sit on top of each other */
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+    }
+    header{
+        position: relative;
+    }
+    nav{
+        /* change the nav now that we are not 
+        showing the header so it still stays on top  */
+        top: 0;
+    }
+}
