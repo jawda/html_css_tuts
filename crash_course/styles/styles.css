@@ -1,0 +1,143 @@
+body, ul, li, h1, h2, a{
+    /* strip styling and set default font  */
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+header{
+    background-color: #F63232;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    /* bring it forward more is forward less is back */
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+header h1{
+    color: white;
+    border: 8px solid white;
+    padding: 6px 12px;
+    /* only take up the space around the element instead of full page  */
+    display: inline-block;
+    /* draw a round border  */
+    border-radius: 36px;
+}
+.banner{
+    /* set this to relative so we can manipulte 
+    children relative to its position */
+    position: relative;
+
+}
+.banner img{
+    max-width: 100%;
+}
+.banner .welcome{
+    /* remove from document flow doesn't maintain space
+    anymore  */
+    position: absolute;
+    left: 0;
+    /* position it 30 % from top of banner */
+    top: 30%;
+    background-color: #FEB614;
+    color: white;
+    padding: 30px;
+}
+.banner h2{
+    font-size: 74px;
+}
+.banner h2 span{
+    /* take its current value and multiply it times 1.3 */
+    font-size: 1.3em;
+}
+nav{
+    background-color: #f4f4f4;
+    padding: 20px;
+
+    /* when nav bar gets to 106 px it stays below the banner
+     and sticks to page  */
+    position: sticky;
+    top: 106px;
+}
+nav ul{
+    /* adding this to keep the li from dropping to the next line  */
+    white-space: nowrap;
+    max-width: 1200px;
+    /* if there is any space left over center  */
+    margin: 0 auto;
+}
+nav li{
+    /* make them take 1/4 of the space  */
+    width: 25%;
+    display: inline-block;
+    font-size: 24px;
+}
+nav li a{
+    text-decoration: none;
+    color: #4b4b4b;
+}
+nav li a.join{
+    color: #f63232;
+}
+main{
+    /* set it to max or 1200 whichever is smaller  */
+    max-width: 100%;
+    width: 1200px;
+    /* this will be relative to the viewport matched
+     with width from above */
+    margin: 80px auto;
+    padding: 0 40px;
+    /* this will keep the padding from 
+    pushing it off the page on smaller screens */
+    box-sizing: border-box;
+}
+article h2{
+    color: #f63232;
+    font-size: 48px;
+}
+article p{
+    /* space the sentences out by 2 x the font height */
+    line-height: 2em;
+    color: #4b4b4b;
+}
+.images{
+    text-align: center;
+    margin: 80px 0;
+    /* again keep the li from wrapping  */
+    white-space: nowrap;
+}
+.images li{
+    display: inline-block;
+    width: 40%;
+    margin: 20px 5%;
+}
+.images li img{
+    /* this is 100% of the parent container 
+    in this case li  */
+    max-width: 100%;
+}
+section.join{
+    background: #f4f4f4;
+    text-align: center;
+    padding: 60px 20px;
+    color: #4b4b4b;
+}
+.join h2{
+    font-size: 36px;
+}
+form input{
+    margin: 20px 0;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 28px;
+    /* adding a border to use later with hover  */
+    border: 4px solid white;
+}
+footer{
+    /* make it match header  */
+    background: #f63232;
+    color: white;
+    padding: 10px; 
+    text-align: center;
+}
