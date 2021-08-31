@@ -1,0 +1,7 @@
+to run json server
+npx json-server --watch data/db.json --port 8000
+to run app
+npm run start
+
+react router
+npm install react-router-dom@5
