@@ -5,3 +5,7 @@ npm run start
 
 react router
 npm install react-router-dom@5
+
+creating a new project
+from powershell 
+npx create-react-app <name of app>
