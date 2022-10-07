@@ -1,19 +1,21 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css';
 import Wheel from './pages/wheel';
+import Home from './pages/home';
 import './wheel.scss';
 
 function App()  {
 
       return(
       
-      <div className="App">
-      <header className="App-header">
-         
-      </header>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/wheel" element={<Wheel />} />
+          </Routes>
+        </BrowserRouter>
       
-      <Wheel />
-    </div>
   );
   
   
