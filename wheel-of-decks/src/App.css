@@ -4,7 +4,10 @@
 * {
   margin: 0;
   font-family: "Quicksand";
-  color: #333;
+  color: #F1FAEE;
+}
+.App {
+  color: #A8DADC;
 }
 .navbar {
   padding: 20px;
@@ -14,10 +17,10 @@
   margin: 0 50 auto;
   padding-left: 50px;
   border-bottom: 1px solid #f2f2f2;
-  background-color: #B0D7FF;
+  background-color: #1D3557;
 }
 .navbar h1 {
-  color: #2D3142;
+  color: #E63946;
 }
 .navbar .links {
   margin-left: auto;
@@ -27,9 +30,10 @@
   margin-left: 16px;
   text-decoration: none;
   padding: 6px;
+  color: #A8DADC;
 }
 .navbar a:hover {
-  color: #2D3142;
+  color: #F1FAEE;
   font-size: 1.5em;
   font-weight: bold;
 }
@@ -43,6 +47,14 @@
   max-width: 600px;
   margin: 40px auto;
   padding: 20px;
+}
+.home-text{
+  color: #1D3557;
+  font-size: 18px;
+}
+.title{
+  font-size: 40px;
+  color: #1D3557;
 }
 .sticky + .content {
   padding-top: 60px;
@@ -123,8 +135,8 @@ li:nth-child(12) {
 }
 
 .circle {
-  width: 40em;
-  height: 40em;
+  width: 30em;
+  height: 30em;
   border: 1px solid black;
   position: relative;
   padding: 0;
@@ -172,7 +184,7 @@ li {
 .spin-button {
   position: absolute;
   left: 45%;
-  width: 200px;
+  width: 160px;
   height: 80px;
   background-color: blue;
   border-radius: 30px;
@@ -181,6 +193,7 @@ li {
   outline: none;
   color: white;
   font-size: 50px;
+  font-family: "Quicksand";
   -webkit-text-stroke: 1px black;
   stroke: black;
   stroke-width: 1px;
