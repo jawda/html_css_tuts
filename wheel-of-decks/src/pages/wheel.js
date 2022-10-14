@@ -19,59 +19,59 @@ class Wheel extends React.Component{
     render() {
         return(
             <div>
-        <div className='arrow'></div>
-      <ul className={this.state.name}>
-        <li className='li-rotate'>
-          <div className="text"
-            spellCheck="false">1</div>
-        </li>
-        <li className='li-rotate'>
-          <div className="text"
-            spellCheck="false">2</div>
-        </li>
-        <li className='li-rotate'>
-          <div className="text"
-            spellCheck="false">3</div>
-        </li>
-        <li className='li-rotate'>
-          <div className="text"
-            spellCheck="false">4</div>
-        </li>
-        <li className='li-rotate'>
-          <div className="text"
-            spellCheck="false">5</div>
-        </li>
-        <li className='li-rotate'>
-          <div className="text"
-            spellCheck="false">6</div>
-        </li>
-        <li className='li-rotate'>
-          <div className="text"
-            spellCheck="false">7</div>
-        </li>
-        <li className='li-rotate'>
-          <div className="text"
-            spellCheck="false">8</div>
-        </li>
-        <li className='li-rotate'>
-          <div className="text"
-            spellCheck="false">9</div>
-        </li>
-        <li className='li-rotate'>
-          <div className="text"
-            spellCheck="false">10</div>
-        </li>
-        <li className='li-rotate'>
-          <div className="text"
-            spellCheck="false">11</div>
-        </li>
-        <li className='li-rotate'>
-          <div className="text"
-            spellCheck="false">12</div>
-        </li>
-      </ul>
-      <button className='spin-button'
-       onClick={this.startRotation}>SPIN</button>
+                <div className='arrow'></div>
+                <ul className={this.state.name}>
+                    <li className='li-rotate'>
+                        <div className="text"
+                            spellCheck="false">1</div>
+                    </li>
+                    <li className='li-rotate'>
+                        <div className="text"
+                            spellCheck="false">2</div>
+                    </li>
+                    <li className='li-rotate'>
+                        <div className="text"
+                            spellCheck="false">3</div>
+                    </li>
+                    <li className='li-rotate'>
+                        <div className="text"
+                            spellCheck="false">4</div>
+                    </li>
+                    <li className='li-rotate'>
+                        <div className="text"
+                            spellCheck="false">5</div>
+                    </li>
+                    <li className='li-rotate'>
+                        <div className="text"
+                            spellCheck="false">6</div>
+                    </li>
+                    <li className='li-rotate'>
+                        <div className="text"
+                            spellCheck="false">7</div>
+                    </li>
+                    <li className='li-rotate'>
+                        <div className="text"
+                            spellCheck="false">8</div>
+                    </li>
+                    <li className='li-rotate'>
+                        <div className="text"
+                            spellCheck="false">9</div>
+                    </li>
+                    <li className='li-rotate'>
+                        <div className="text"
+                            spellCheck="false">10</div>
+                    </li>
+                    <li className='li-rotate'>
+                        <div className="text"
+                            spellCheck="false">11</div>
+                    </li>
+                    <li className='li-rotate'>
+                        <div className="text"
+                            spellCheck="false">12</div>
+                    </li>
+                </ul>
+                <button className='spin-button'
+                onClick={this.startRotation}>SPIN</button>
     </div>
         )
     }

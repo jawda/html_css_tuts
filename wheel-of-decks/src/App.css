@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
+/* color schemes */
+/* 
+color: #F1FAEE;
+color: #A8DADC;
+color: #E63946;
+color: #1D3557;
+color: #457b9d; 
+*/
+
+
 /* base styles */
 * {
   margin: 0;
@@ -177,7 +187,7 @@ li {
   border-right: 30px solid transparent;
   border-top: 80px solid black;
   position: absolute;
-  left: 50%;
+  left: 48%;
   top: 100px;
   z-index: 1;
 }
