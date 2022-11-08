@@ -1,8 +1,21 @@
 import React from "react";
+const itemCount = [1,2,3,4,5,6,7,8,9,10,11,12];
+let Repeater = () => {
+    return (
+        <div>
+            {itemCount.map(i => {
+                return <li className='li-rotate' key={i}>
+                    <div className="text"
+                            spellCheck="false">
+                                {i}
+                    </div></li>;
+            })}
+        </div>
+    );
+    
+};    
 class Wheel extends React.Component{
-    // constructor(){
-    //     super();
-    // }
+
     state = {
           name: "circle"
         }
@@ -19,59 +32,18 @@ class Wheel extends React.Component{
     render() {
         return(
             <div>
+                {/* TODO: add a title or something above the spinner? probably */}
+                
                 <div className='arrow'></div>
                 <ul className={this.state.name}>
-                    <li className='li-rotate'>
-                        <div className="text"
-                            spellCheck="false">1</div>
-                    </li>
-                    <li className='li-rotate'>
-                        <div className="text"
-                            spellCheck="false">2</div>
-                    </li>
-                    <li className='li-rotate'>
-                        <div className="text"
-                            spellCheck="false">3</div>
-                    </li>
-                    <li className='li-rotate'>
-                        <div className="text"
-                            spellCheck="false">4</div>
-                    </li>
-                    <li className='li-rotate'>
-                        <div className="text"
-                            spellCheck="false">5</div>
-                    </li>
-                    <li className='li-rotate'>
-                        <div className="text"
-                            spellCheck="false">6</div>
-                    </li>
-                    <li className='li-rotate'>
-                        <div className="text"
-                            spellCheck="false">7</div>
-                    </li>
-                    <li className='li-rotate'>
-                        <div className="text"
-                            spellCheck="false">8</div>
-                    </li>
-                    <li className='li-rotate'>
-                        <div className="text"
-                            spellCheck="false">9</div>
-                    </li>
-                    <li className='li-rotate'>
-                        <div className="text"
-                            spellCheck="false">10</div>
-                    </li>
-                    <li className='li-rotate'>
-                        <div className="text"
-                            spellCheck="false">11</div>
-                    </li>
-                    <li className='li-rotate'>
-                        <div className="text"
-                            spellCheck="false">12</div>
-                    </li>
+                    <Repeater />
                 </ul>
-                <button className='spin-button'
+
+                <div><h1 className="title">The wheel of random!</h1></div>
+                <div>
+                    <button className='spin-button'
                 onClick={this.startRotation}>SPIN</button>
+                </div>
     </div>
         )
     }

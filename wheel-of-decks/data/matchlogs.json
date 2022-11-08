@@ -1,0 +1,27 @@
+{
+    "matchlogs": [
+      {
+        "deck_id": 0,
+        "log_id": 1,
+        "deck_name": "TES",
+        "opponent_deck": "Reanimator",
+        "opponent_deck_id": 1,
+        "matchup_id": 0,
+        "match_id": 0,
+        "game_id": 0,
+        "win": true
+      },
+      {
+        "deck_id": 0,
+        "log_id": 2,
+        "deck_name": "TES",
+        "opponent_deck": "Miracles",
+        "opponent_deck_id": 2,
+        "matchup_id": 1,
+        "match_id": 1,
+        "game_id": 0,
+        "win": true
+      }         
+    ]
+    
+  }

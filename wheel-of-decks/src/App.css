@@ -58,6 +58,8 @@ color: #457b9d;
   margin: 40px auto;
   padding: 20px;
 }
+
+
 .home-text{
   color: #1D3557;
   font-size: 18px;
@@ -208,6 +210,7 @@ li {
   stroke: black;
   stroke-width: 1px;
 }
+
 .start-rotate {
   animation: start-rotate 1s linear infinite;
 }
@@ -218,4 +221,55 @@ li {
 }
 .stop-rotate {
   animation-play-state: paused;
+}
+
+.dlog-list *{
+  color: #1D3557;
+}
+
+.dlog-title{
+  font-size: 3.5em;
+  color: #E63946;
+}
+.dlog-preview{
+  padding: 20px;
+  font-size: 1.5em;
+}
+.title{
+  color: #1D3557;
+  margin: 10px;
+}
+/* for max width of 1400px or less  */
+@media screen and (max-width: 700px){
+  .navbar {
+    padding: 20px;
+    margin: 0 50 auto;
+    padding-left: 20px;
+  }
+  .homeName {
+    display: none;
+  }
+  .navbar .links {
+    margin-right: 120px;
+  }
+  .navbar a {
+    margin-left: 16px;
+  }
+  .navbar a:hover {
+    font-size: 1.1em;
+  }
+  .circle {
+    width: 20em;
+    height: 20em;
+  }
+  .spin-button {
+    width: 110px;
+    height: 60px;
+    border-radius: 30px;
+    margin-top: 20px;
+    font-size: 30px;
+    -webkit-text-stroke: 1px black;
+    stroke: black;
+    stroke-width: 0.5px;
+  }
 }

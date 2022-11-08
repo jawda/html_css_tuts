@@ -1,0 +1,16 @@
+{
+    "decknames": [
+        {
+            "deck_id": 0,
+            "deck_name": "TES"
+        },
+        {
+            "deck_id": 1,
+            "deck_name": "Reanimator"
+        },
+        {
+            "deck_id": 2,
+            "deck_name": "Miracles"
+        }
+    ]
+}
